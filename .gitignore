@@ -1,0 +1,62 @@
+# Build
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+*.log
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+appsettings.*.local.json
+secrets.json
+*.pfx
+*.snk
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# IDEs
+.vs/
+.vscode/
+.idea/
+*.rsuser
+*.DotSettings.user
+
+# Test and coverage
+TestResults/
+[Cc]overage/
+*.coverage
+*.coveragexml
+coverage*.json
+coverage*.xml
+
+# Local databases and Docker data
+*.mdf
+*.ldf
+*.ndf
+*.db
+*.sqlite
+*.sqlite3
+docker-data/
+**/docker-volumes/
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# NuGet
+*.nupkg
+*.snupkg
+**/packages/*
+!**/packages/build/
+
+# Publish
+publish/
+artifacts/
+*.zip

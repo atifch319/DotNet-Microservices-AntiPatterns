@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />
+    <PackageReference Include="xunit" />
+    <PackageReference Include="xunit.runner.visualstudio" />
+    <PackageReference Include="coverlet.collector" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" />
+    <PackageReference Include="RabbitMQ.Client" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\OrderService\OrderService.csproj" />
+    <ProjectReference Include="..\..\src\InventoryService\InventoryService.csproj" />
+    <ProjectReference Include="..\..\src\PaymentService\PaymentService.csproj" />
+    <ProjectReference Include="..\..\src\NotificationService\NotificationService.csproj" />
+    <ProjectReference Include="..\..\src\SharedContracts\SharedContracts.csproj" />
+  </ItemGroup>
+</Project>

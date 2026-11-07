@@ -1,0 +1,14 @@
+**/.git
+**/.vs
+**/.idea
+**/.env
+**/bin
+**/obj
+**/TestResults
+**/*.user
+**/*.mdf
+**/*.ldf
+docs
+tests
+examples
+agent-transcripts

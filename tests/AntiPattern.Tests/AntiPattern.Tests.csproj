@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />
+    <PackageReference Include="xunit" />
+    <PackageReference Include="xunit.runner.visualstudio" />
+    <PackageReference Include="coverlet.collector" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\examples\AntiPatterns\SharedDatabase\SharedDatabase.csproj" />
+    <ProjectReference Include="..\..\examples\AntiPatterns\SynchronousChain\SynchronousChain.csproj" />
+    <ProjectReference Include="..\..\examples\AntiPatterns\WrongServiceBoundaries\WrongServiceBoundaries.csproj" />
+    <ProjectReference Include="..\..\examples\AntiPatterns\DeploymentCoupling\DeploymentCoupling.csproj" />
+  </ItemGroup>
+</Project>
